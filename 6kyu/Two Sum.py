@@ -10,6 +10,7 @@ Based on: http://oj.leetcode.com/problems/two-sum/
 twoSum [1, 2, 3] 4 === (0, 2)
 '''
 
+
 from itertools import combinations
 def two_sum(numbers, target):
     for x in combinations(numbers, r=2):
