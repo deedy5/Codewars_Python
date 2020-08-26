@@ -1,5 +1,7 @@
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)[![alt text](https://www.codewars.com/users/deedy-ru/badges/small)](https://www.codewars.com/users/deedy-ru)
+[![alt text](https://img.shields.io/badge/python-3.6-red)
+[![alt text](https://www.codewars.com/users/deedy-ru/badges/micro)](https://www.codewars.com/users/deedy-ru)
 
 # Codewars_Python
 Codewars solutions in python
 
+![alt text](https://www.codewars.com/users/deedy-ru/badges/large)
