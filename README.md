@@ -2,4 +2,6 @@
 ---
 ## Codewars solutions in python
 
-![alt text](https://www.codewars.com/users/deedy-ru/badges/large)
+![My profile](https://www.codewars.com/users/deedy-ru)
+
+![alt text](https://www.codewars.com/users/deedy-ru/badges/small)
