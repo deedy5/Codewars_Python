@@ -19,4 +19,6 @@ anagrams('laser', ['lazing', 'lazy',  'lacer']) => []
 '''
 
 def anagrams(word, words):
-    return [x for x in words if (set(x)==set(word) and len(x)==len(word))] if words else []
+    setword = set(word)
+    lenword = len(word)
+    return [x for x in words if set(x)==setword and len(x)==lenword]
