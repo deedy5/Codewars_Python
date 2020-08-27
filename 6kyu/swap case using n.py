@@ -17,6 +17,8 @@ swap('', 11345) == ''
 swap('the lord of the rings', 0) == 'the lord of the rings'
 '''
 
+#v1
+'''
 from itertools import cycle
 def swap(s,n):
     codegen = (x for x in cycle(f"{n:0b}"))
@@ -27,3 +29,10 @@ def swap(s,n):
                 char = char.swapcase()
         r.append(char)
     return ''.join(r)
+'''
+
+#v2
+from itertools import cycle
+def swap(s,n):
+    codegen = cycle(f"{n:0b}")
+    return ''.join(char.swapcase() if char.isalpha() and next(codegen)=='1' else char for char in s)
