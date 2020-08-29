@@ -9,18 +9,6 @@ find_missing([1, 3, 5, 9, 11]) == 7
 PS: This is a sample question of the facebook engineer challenge on interviewstreet. I found it quite fun to solve on paper using math, derive the algo that way. Have fun!
 '''
 
-
-'''
-#v1 -- bad---
-
-from collections import Counter
-def find_missing(sequence):
-    t = Counter(sequence[i]-sequence[i-1] for i in range(1, len(sequence))).most_common()
-    for i in range(1, len(sequence)):
-        if sequence[i] - sequence[i-1] == t[1][0]:
-            return sequence[i] - t[0][0]
-'''
-
 #v2
 def find_missing(sequence):
     interval = (sequence[-1] - sequence[0]) / len(sequence)
