@@ -13,3 +13,10 @@ You can pass by relying on luck or skill but try not to rely on luck.
 def randint(x, y):
     return 10
 guess = 10
+
+''' v2
+from random import randint,seed
+seed(1)
+guess = randint(1,100)
+seed(1)
+'''
