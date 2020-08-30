@@ -19,6 +19,7 @@ foo099 -> foo100
 Attention: If the number has leading zeros the amount of digits should be considered.
 '''
 
+'''
 # v1
 def increment_string(strng):
     print(strng)
@@ -33,3 +34,12 @@ def increment_string(strng):
         return f"{ss}1"
     num = f"{int(ns)+1:0{len(ns)}}"
     return f"{ss}{num}"
+'''
+
+# v2
+def increment_string(strng):
+    ss = strng.rstrip('0123456789')
+    ns = strng[len(ss):]
+    if ns == '':
+        return f"{ss}1"
+    return f"{ss}{int(ns)+1:0{len(ns)}}"
