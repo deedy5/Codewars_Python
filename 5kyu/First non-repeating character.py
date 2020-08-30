@@ -10,12 +10,8 @@ If a string contains all repeating characters, it should return an empty string 
 
 from collections import Counter
 def first_non_repeating_letter(string):
-    if string == '':
-        return ''
     sc = Counter(string.lower())
-    t = set(k for k,v in sc.items() if v == 1)
-    if not t:
-        return ''
     for x in string:
-        if x.lower() in t:
+        if sc[x.lower()] == 1:
             return x
+    return ''
