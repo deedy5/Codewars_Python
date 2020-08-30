@@ -5,4 +5,4 @@
 
 ![codewars-manual.jpg](https://i.postimg.cc/NjH5Sp6s/codewars-manual.jpg)
 ---
- ## [My profile](https://www.codewars.com/users/deedy-ru)  :eye:  ![alt text](https://www.codewars.com/users/deedy-ru/badges/small)
+ ## [My profile](https://www.codewars.com/users/deedy-ru)  :eye:  ![alt text](https://www.codewars.com/users/deedy-ru/badges/large)
