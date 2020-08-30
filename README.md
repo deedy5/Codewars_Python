@@ -6,5 +6,3 @@
 ![alt text](https://www.codewars.com/users/deedy-ru/badges/small)
 
 ![codewars-manual.jpg](https://i.postimg.cc/NjH5Sp6s/codewars-manual.jpg)
-
----
