@@ -10,6 +10,7 @@ for example, when given size is 3:
 for given example, the return value should be: [[1,2,3],[2,4,6],[3,6,9]]
 '''
 
+'''
 # v1
 def multiplication_table(size):
     r = []
@@ -19,3 +20,8 @@ def multiplication_table(size):
             t.append(y*x)
         r.append(t)
     return r
+'''
+
+#v2
+def multiplication_table(size):
+    return [[x*y for y in range(1, size+1)]for x in range(1, size+1)]
