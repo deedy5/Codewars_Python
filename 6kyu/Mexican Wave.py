@@ -26,3 +26,9 @@ def wave(people):
         if people[i] != ' ':
             r.append(f"{people[:i]}{people[i].upper()}{people[i+1:]}")
     return r
+
+'''
+#v2
+def wave(p):
+    return [f"{p[:i]}{p[i].upper()}{p[i+1:]}" for i in range(len(p)) if p[i]!=' ']
+'''
