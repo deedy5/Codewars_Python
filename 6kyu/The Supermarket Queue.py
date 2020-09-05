@@ -36,9 +36,23 @@ N.B. You should assume that all the test input will be valid, as specified above
 P.S. The situation in this kata can be likened to the more-computer-science-related idea of a thread pool, with relation to running multiple processes at the same time: https://en.wikipedia.org/wiki/Thread_pool
 '''
 
+'''
+# v1 queue = List
 def queue_time(customers, n):
     queue = [0] * n
     for i in customers:
         queue[0] += i
         queue.sort()
     return(max(queue))
+'''
+
+#v2 queue = heapq
+import heapq
+def queue_time(customers, n):
+    ar = [0] * n
+    for i in customers:
+        heapq.heapreplace(ar, ar[0]+i)
+    return(heapq.nlargest(1, ar)[0])
+
+
+
