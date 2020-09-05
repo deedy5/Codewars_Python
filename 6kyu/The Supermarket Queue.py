@@ -52,7 +52,7 @@ def queue_time(customers, n):
     ar = [0] * n
     for i in customers:
         heapq.heapreplace(ar, ar[0]+i)
-    return(heapq.nlargest(1, ar)[0])
+    return(max(ar))
 
 
 
