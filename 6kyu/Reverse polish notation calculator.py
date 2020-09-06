@@ -13,27 +13,20 @@ You may assume that there won't be exceptional situations (like stack underflow 
 '''
 
 def calc(expr):    
-    def dig(n):
-        if isinstance(n, str):
-            try:
-                return int(n)
-            except:
-                return float(n)
-        return n    
     exprlist = expr.split()
     while exprlist:
         for i,x in enumerate(exprlist):
             if x in ['+', '-', '*', '/']:
                 if x == '+':
-                    t = dig(exprlist[i-2]) + dig(exprlist[i-1])
+                    t = float(exprlist[i-2]) + float(exprlist[i-1])
                 if x == '-':
-                    t = dig(exprlist[i-2]) - dig(exprlist[i-1])
+                    t = float(exprlist[i-2]) - float(exprlist[i-1])
                 if x == '*':
-                    t = dig(exprlist[i-2]) * dig(exprlist[i-1])
+                    t = float(exprlist[i-2]) * float(exprlist[i-1])
                 if x == '/':
-                    t = dig(exprlist[i-2]) / dig(exprlist[i-1])
+                    t = float(exprlist[i-2]) / float(exprlist[i-1])
                 exprlist[i-2: i+1] = [t]
                 break
             if len(exprlist) == 1:
-                return dig(exprlist[0])
+                return float(exprlist[0])
     return 0
