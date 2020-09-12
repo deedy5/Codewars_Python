@@ -32,7 +32,8 @@ thirt(1234567) calculates 178, then 87, then 87 and returns 87.
 thirt(321) calculates 48, 48 and returns 48
 '''
 
-
+'''
+#v1
 from itertools import zip_longest, cycle, takewhile
 def thirt(n):
     t = 0
@@ -41,3 +42,13 @@ def thirt(n):
         if n == t:
             return t
         n = t
+'''
+
+
+def thirt(n):
+    base = [1, 10, 9, 12, 3, 4]
+    while True:
+        tsum = sum(int(x)*base[i%6] for i,x in enumerate(reversed(str(n))))
+        if tsum == n:
+            return tsum
+        n = tsum
