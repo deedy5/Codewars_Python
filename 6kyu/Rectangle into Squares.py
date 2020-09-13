@@ -48,7 +48,6 @@ def sqInRect(lng, wdth):
         return None
     r = []
     while lng > 0 and wdth > 0:
-        print(lng, wdth)
         if lng > wdth:
             r.append(wdth)
             lng -= wdth            
