@@ -29,5 +29,4 @@ def end_one(n):
             return True
         
 def solve(a,b):
-    t = [n for n in range(a, b) if is_prime(n) and end_one(n)]
-    return len(t)
+    return sum(1 for n in range(a, b) if is_prime(n) and end_one(n))
